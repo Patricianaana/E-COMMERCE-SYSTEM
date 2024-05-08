@@ -58,7 +58,7 @@
                     </div>
                     <div class="left flex items-center gap-16">
                         <a href='index.html' class='flex items-center max-lg:absolute max-lg:left-1/2 max-lg:-translate-x-1/2'>
-                            <div class="heading4">Anvogue</div>
+                            <div class="heading4">PHASHIONOVA</div>
                         </a>
                         <div class="menu-main h-full max-lg:hidden">
                             <ul class='flex items-center gap-8 h-full'>
@@ -874,7 +874,7 @@
                                     </div>
                                 </li>
                                 <li class='h-full'>
-                                    <a href="#!" class='text-button-uppercase duration-300 h-full flex
+                                    <a href="product" class='text-button-uppercase duration-300 h-full flex
                                         items-center justify-center'>
                                         Product
                                     </a>

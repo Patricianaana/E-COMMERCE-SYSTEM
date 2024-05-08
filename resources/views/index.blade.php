@@ -37,7 +37,7 @@
 
 <div class="collection-block md:pt-20 pt-10">
     <div class="container">
-        <div class="heading3 text-center">Explore Collections</div>
+        <div class="heading3 text-center">Top Collections</div>
     </div>
     <div class="list-collection relative section-swiper-navigation md:mt-10 mt-6 sm:px-5 px-4">
         <div class="swiper-button-prev lg:left-10 left-6"></div>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="tab-item relative text-secondary heading5 py-2 px-5 cursor-pointer duration-500 hover:text-black active"
                         data-item="best sellers">
-                        best sellers</div>
+                        best selling</div>
                     <div class="tab-item relative text-secondary heading5 py-2 px-5 cursor-pointer duration-500 hover:text-black"
                         data-item="on sale">
                         on sale</div>
@@ -157,7 +157,7 @@
             <img src='assets/images/banner/1.png' class='duration-1000' alt="img" />
         </div>
         <div class="banner-content absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-            <div class="heading2 text-white">Best Sellers</div>
+            <div class="heading2 text-white">Best Selling</div>
             <div
                 class="text-button text-white relative inline-block pb-1 border-b-2 border-white duration-500 mt-2">
                 Shop Now</div>
@@ -320,8 +320,8 @@
 <div class="instagram-block md:pt-20 pt-10">
     <div class="container">
         <div class="heading">
-            <div class="heading3 text-center">Anvogue On Instagram</div>
-            <div class="text-center mt-3">#Anvougetheme</div>
+            <div class="heading3 text-center">Phasionova On Instagram</div>
+            <div class="text-center mt-3">#Phashionovatheme</div>
         </div>
         <div class="list-instagram md:mt-10 mt-6">
             <div class="swiper swiper-list-instagram">
@@ -450,5 +450,4 @@
         </div>
     </div>
 </div>
-div
 @endsection
