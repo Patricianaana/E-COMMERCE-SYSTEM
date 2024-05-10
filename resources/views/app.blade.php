@@ -1232,7 +1232,5 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
-
 <!-- Mirrored from anvogue-html.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2024 15:17:47 GMT -->
 </html>
