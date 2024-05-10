@@ -1,27 +1,50 @@
-<x-app-layout>
-    <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                <div>
-                    <a href="/"> {{ __('Wallets') }}</a>
-                </div>
-            </h2>
-    </x-slot>
+@extends('bootstrap.style')
 
-    <section class="py-10 bg-blue-50 leading-6 text-blue-900 sm:py-16 lg:py-24">
-        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <x-splade-form action="{{ route('') }}" class="space-y-4 mb-4">
-                <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                    <x-splade-input id="name" type="text" name="name" :label="__('Wallet Name')" required />
-                    <x-splade-input id="slug" type="text" name="slug" :label="__('Wallet slug')" placeholder="e.g. Second Wallet" required />
-
-                  
-                {{-- <div class="flex items-center justify-center mt-2">
-                    <x-splade-submit class="ml-4" :label="__('Add')" />
-                </div> --}}
-                </div>
-                
-            </x-splade-form>
+    @if($errors->any())
+      <div class="alert alert-danger" role="alert">
+        <ul>
+            @foreach($errors->all() as $error)
+               <li>{{$error}}</li>
+            @endforeach
+        </ul>
+      </div>
+    @endif
+    <div class="container-lg">
+        <div class="">
+            <h2>Add New Product</h2>
         </div>
-    </section>
+        <form method="POST" action="/tasks" enctype="multipart/form-data">
+            <div class="form-group mb-1">
+                @csrf
+                <div class="mb-3">
+                    <label class="form-label" for="product_name">Product Name</label>
+                    <input placeholder="Enter product name here" type="text" name="product_name" class="form-control mb-1">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="product_price">Product price</label>
+                    <input placeholder="Enter product price here" type="text" class="form-control" name="product_price">
+                </div>
+               <div class="mb-3">
+                <label class="form-label" for="product_description">Product Description</label>
+                <textarea placeholder="Description:" class="form-control" id="product_description" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Select product category</label>
+               <select name="product_category" class="form-select" aria-label="Default select example">
+                <option  selected disabled>Category</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+               </select>
+              </div>
+               <div class="mb-3">
+                <label for="product_image" class="form-label">Add product image</label>
+                <input class="form-control" type="file" id="product_image">
+              </div>
+            </div>
+            <div class="d-grid form-group mt-3">
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </div>
+        </form>
+    </div>
 
-</x-app-layout>
