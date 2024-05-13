@@ -1,0 +1,24 @@
+ public function addDevice(Request $req)
+    {
+        $device= new Device;
+        $device->device_name=$req->device_name;
+        $device->member_id=$req->member_id;
+        $results=$device->save();
+    
+        if($results)
+        {
+            return ["Results"=>"Device added successfully"];
+        }
+        else
+        {
+            return ["Result"=>"Addition operation failed"];
+        }
+       
+    }
+
+     Task::create([
+            'title' => request('title'),
+            'description' => request('description'),
+            'due_date' =>request('due_date'),
+        ]);
+        return redirect('/');
