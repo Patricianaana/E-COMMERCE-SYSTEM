@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,5 @@ Route::get('product', function()
 {
     return view('addProducts');
 });
+
+Route::post('product',[UsersController::class, ('addProduct')]);

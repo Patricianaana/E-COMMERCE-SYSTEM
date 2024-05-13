@@ -13,7 +13,7 @@
         <div class="">
             <h2>Add New Product</h2>
         </div>
-        <form method="POST" action="/tasks" enctype="multipart/form-data">
+        <form method="POST" action="product" enctype="multipart/form-data">
             <div class="form-group mb-1">
                 @csrf
                 <div class="mb-3">
@@ -26,20 +26,22 @@
                 </div>
                <div class="mb-3">
                 <label class="form-label" for="product_description">Product Description</label>
-                <textarea placeholder="Description:" class="form-control" id="product_description" rows="3"></textarea>
+                <textarea placeholder="Description:" class="form-control" id="product_description" name="product_description" rows="3"></textarea>
               </div>
               <div class="mb-3">
                 <label class="form-label">Select product category</label>
                <select name="product_category" class="form-select" aria-label="Default select example">
                 <option  selected disabled>Category</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                @forelse (\App\Models\Category::all() as $cat)
+                                    <option value="{{ $cat->id }}">{{ $cat->category_name}}</option>
+                                @empty
+                                    <option selected disabled>No category found.</option>
+                                @endforelse
                </select>
               </div>
                <div class="mb-3">
                 <label for="product_image" class="form-label">Add product image</label>
-                <input class="form-control" type="file" id="product_image">
+                <input class="form-control" type="file" id="product_image" name="product_image">
               </div>
             </div>
             <div class="d-grid form-group mt-3">
