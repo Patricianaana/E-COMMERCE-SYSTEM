@@ -1248,11 +1248,11 @@
                                     </div> --}}
                                 </li>
                                 <li class='h-full relative'>
-                                    <a href="#!" class='text-button-uppercase duration-300 h-full flex
+                                    <a href="category" class='text-button-uppercase duration-300 h-full flex
                                         items-center justify-center'>
-                                        Blog
+                                        Category
                                     </a>
-                                    <div class="sub-menu py-3 px-5 -left-10 absolute bg-white rounded-b-xl">
+                                    {{-- <div class="sub-menu py-3 px-5 -left-10 absolute bg-white rounded-b-xl">
                                         <ul class='w-full'>
                                             <li>
                                                 <a href="blog-default.html" class='link text-secondary duration-300'>
@@ -1280,7 +1280,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> --}}
                                 </li>
                                 <li class='h-full relative'>
                                     <a href="#!" class='text-button-uppercase duration-300 h-full flex

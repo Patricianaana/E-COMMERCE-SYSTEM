@@ -29,6 +29,11 @@ class UsersController extends Controller
 
     }
 
+    public function viewProducts(){
+        $items = Product::all();
+        return view('allProduct');
+    }
+
 
 
 

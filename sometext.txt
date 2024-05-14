@@ -22,3 +22,8 @@
             'due_date' =>request('due_date'),
         ]);
         return redirect('/');
+
+        <a href="product" class="text-button-uppercase duration-300 h-full flex
+                                        items-center justify-center">
+                                        Product
+                                    </a>

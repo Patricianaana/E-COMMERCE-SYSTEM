@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('index');
 });
 
@@ -23,4 +23,14 @@ Route::get('product', function()
     return view('addProducts');
 });
 
-Route::post('product',[UsersController::class, ('addProduct')]);
+Route::get('category', function(){
+    return view('selectCategroy');
+});
+
+Route::get('products', function() {
+    return view('allProduct');
+});
+
+Route::post('product',[UsersController::class, 'addProduct']);
+
+Route::get('products', [UsersController::class, 'viewProducts']);
