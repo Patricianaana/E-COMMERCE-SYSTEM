@@ -31,6 +31,12 @@ Route::get('products', function() {
     return view('allProduct');
 });
 
+Route::get('details', function() {
+    return view('productDetails');
+});
+
 Route::post('product', [UsersController::class, 'addProduct'])->name('add-product');
 
 Route::get('products', [UsersController::class, 'viewProducts']);
+
+// Route::get('details', [UsersController::class, 'viewProductDetails']);
