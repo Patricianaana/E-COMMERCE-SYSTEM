@@ -2,7 +2,7 @@
 
     <div class="container-fluid d-flex justify-content-between align-items-center mb-5">
       <h2 class="text-center">Categories</h2>
-      <a href="" class="btn btn-primary">View Products</a>
+      <a href="products" class="btn btn-primary">View Products</a>
     </div>
 
     <div class="container-lg">

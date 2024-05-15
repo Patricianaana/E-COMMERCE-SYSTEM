@@ -31,6 +31,6 @@ Route::get('products', function() {
     return view('allProduct');
 });
 
-Route::post('product',[UsersController::class, 'addProduct']);
+Route::post('product', [UsersController::class, 'addProduct'])->name('add-product');
 
 Route::get('products', [UsersController::class, 'viewProducts']);
