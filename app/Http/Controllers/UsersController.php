@@ -35,6 +35,12 @@ class UsersController extends Controller
         return view('allProduct',compact('items'));
     }
 
+    public function viewProductDetails($id)
+    {
+        $things=Product::find($id);
+        return view('productDetails', compact('things'));
+    }
+
 
 
 

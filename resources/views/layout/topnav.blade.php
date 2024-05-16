@@ -874,7 +874,7 @@
                                     </div>
                                 </li>
                                 <li class='h-full'>
-                                    <a href="product" class='text-button-uppercase duration-300 h-full flex
+                                    <a href="products" class='text-button-uppercase duration-300 h-full flex
                                         items-center justify-center'>
                                         Product
                                     </a>
