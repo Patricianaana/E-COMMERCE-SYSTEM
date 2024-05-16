@@ -13,7 +13,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Best Selling</h5>
                       <p class="card-text">Elevate your fashion game with Phasionova's Best Selling clothes!</p>
-                      <a href="#" class="btn btn-primary">View Category</a>
+                      <a href="{{'view/'.$item['id']}}" class="btn btn-primary">View Category</a>
                     </div>
                   </div>
             </div>
@@ -23,7 +23,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Top Collection</h5>
                       <p class="card-text">Peak Chic: Elevating Your Style with Phasionova's Top Collection</p>
-                      <a href="#" class="btn btn-primary">View Category</a>
+                      <a href="{{'view/'.$item['id']}}" class="btn btn-primary">View Category</a>
                     </div>
                   </div>
             </div>
@@ -33,7 +33,7 @@
                     <div class="card-body">
                       <h5 class="card-title">What's New?</h5>
                       <p class="card-text">Discover the latest fashion trend with Phashionova's What's New collection.</p>
-                      <a href="#" class="btn btn-primary">View Category</a>
+                      <a href="{{'view/'.$item['id']}}" class="btn btn-primary">View Category</a>
                     </div>
                   </div>
             </div>

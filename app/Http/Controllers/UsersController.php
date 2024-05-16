@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
-use ProtoneMedia\Splade\Facades\Toast;
+use App\Models\Category;
+
 
 class UsersController extends Controller
 {
@@ -30,7 +31,8 @@ class UsersController extends Controller
         return redirect('/');
     }
 
-    public function viewProducts(){
+    public function viewProducts()
+    {
         $items = Product::all();
         return view('allProduct',compact('items'));
     }
@@ -39,6 +41,11 @@ class UsersController extends Controller
     {
         $things=Product::find($id);
         return view('productDetails', compact('things'));
+    }
+
+    public function veiwCategory($id)
+    { 
+        $items=Category::find($id);
     }
 
 
